@@ -14,35 +14,85 @@ class PostList extends Component {
           avatar: "https://media-exp1.licdn.com/dms/image/C4D03AQEwyxQOwroplQ/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=DCZjXc_BYMgHNoog4Syf9v82GEp1Lgi9uAylocs-iNM"
         },
         date: "26 Mac 2020",
-        content: "Pessoal, alguém sabe se a Rocketseat está contratando?",
+        content: "Lorem ipsum dolor sit amet?",
         comments: [
           {
             id: 1,
             author: {
-              name: "Diego Fernandes",
-              avatar: "https://media-exp1.licdn.com/dms/image/C4D03AQEQas5NMNHUYQ/profile-displayphoto-shrink_800_800/0?e=1590624000&v=beta&t=vpsW319Tam9PaOlbcPb8J0jzVaal-qjDF_crIhvGbIE"
+              name: "Diogo Mauro",
+              avatar: "https://cdn.pixabay.com/photo/2017/02/04/12/25/man-2037255__340.jpg"
             },
-            content: `Por enquanto não estamos contratando, mas há previsão
-            de inicio das contratações para o inicio de Abril. Acompanhe nossas redes socias para mais informações`
+            content: ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae omnis unde, distinctio vel, adipisci voluptatum porro, laudantium ipsam doloremque nostrum accusa lor sit, amet consectetur adipisicing elit. Recusandae omnis unde, distinctio vel, adipisci voluptatum porro, laudantium ipsam doloremque nostrum accusa ntium tempora quibusdam beatae sapiente! `
+          },
+          {
+            id: 2,
+            author: {
+              name: "Maria Silva",
+              avatar: "https://cdn.pixabay.com/photo/2016/11/22/21/42/adult-1850703_960_720.jpg"
+            },
+            content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, illum.`
           }
         ]
       },
       {
         id: 2,
         author: {
-          name: "Julio Alcantara",
-          avatar: "http://url-da-imagem.com/imagem.jpg"
+          name: "Marcia July",
+          avatar: "https://cdn.pixabay.com/photo/2015/11/07/11/01/couple-1030744__340.jpg"
         },
-        date: "04 Jun 2019",
-        content: "Pessoal, alguém sabe se a Rocketseat está contratando?",
+        date: "04 Dez 2019",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, commodi nisi. Neque, dicta! Nemo iusto similique placeat explicabo dignissimos ipsum! ",
         comments: [
           {
             id: 2,
             author: {
-              name: "Diego Fernandes",
-              avatar: "http://url-da-imagem.com/imagem.jpg"
+              name: "Joseph Albert",
+              avatar: "https://cdn.pixabay.com/photo/2015/07/20/12/57/man-852766__340.jpg"
             },
-            content: "Conteúdo do comentário"
+            content: " Lorem ipsum dolor sit amet. "
+          },
+          {
+            id: 3,
+            author: {
+              name: "Patrick Lima",
+              avatar: "https://media-exp1.licdn.com/dms/image/C4D03AQEwyxQOwroplQ/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=DCZjXc_BYMgHNoog4Syf9v82GEp1Lgi9uAylocs-iNM"
+            },
+            content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati repudiandae in consequatur sed quas rerum nemo magni illo! Numquam dignissimos error nemo ullam quia sapiente, consequatur autem recusandae obcaecati, est laboriosam dolorem sint! Nam. "
+          },
+          {
+            id: 4,
+            author: {
+              name: "Mauro Vilas Lima",
+              avatar: "https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg"
+            },
+            content: "Lorem ipsum dolor sit error nemo ullam quia sapiente, consequatur autem recusandae obcaecati, est laboriosam dolorem sint! Nam. "
+          }
+        ]
+      },
+      {
+        id: 3,
+        author: {
+          name: "Hamed Homawa",
+          avatar: "https://cdn.pixabay.com/photo/2015/01/27/09/58/human-613601__340.jpg"
+        },
+        date: "04 Fev 2020",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, recusandae? ",
+        comments: [
+          {
+            id: 2,
+            author: {
+              name: "Algusto Joilton",
+              avatar: "https://cdn.pixabay.com/photo/2014/09/25/23/36/man-461195_960_720.jpg"
+            },
+            content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci aliquid saepe quod provident perferendis, possimus laudantium odio ullam facere sequi voluptatibus delectus dignissimos accusantium quidem alias voluptas dolor. Itaque commodi unde officiis, pariatur explicabo sequi et quia, totam eius alias suscipit labore recusandae ratione, facere nesciunt ullam deserunt quis? Reiciendis, ea qui minus consectetur iste magnam rem repellendus pariatur, ipsum iure, aut perspiciatis non explicabo. ."
+          },
+          {
+            id: 3,
+            author: {
+              name: "Dolirew Holse",
+              avatar: "https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166__340.jpg"
+            },
+            content: "Calma meu amor, não precisa ter pressa para pagar as minhas contas, logo logo vc paga tudo."
           }
         ]
       },
@@ -54,9 +104,13 @@ class PostList extends Component {
 
     return (
       <div className="container-list">
-        <Post data={this.state.posts[0]} />
-        <Post />
-        <Post />
+
+      {
+        this.state.posts.map(post => (
+          <Post key={post.id} data={post}/>
+        ))
+      }
+  
       </div>
     )
   }

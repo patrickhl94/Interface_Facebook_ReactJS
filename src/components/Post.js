@@ -27,7 +27,6 @@ class Post extends Component {
   }
 
   render() {
-    console.log('Nome: ', this.props.data.author.name)
 
     return (
       <div className="container-post">
@@ -47,10 +46,11 @@ class Post extends Component {
         </div>
 
         {
-        this.props.data.comments
+          this.props.data.comments.map(comment => (
+            <Comment key={comment.id} comments={comment} />
+          ))
         }
 
-        <Comment comments={this.props.data.comments[0]} />
       </div>
     )
   }

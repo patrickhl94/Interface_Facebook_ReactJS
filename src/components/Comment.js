@@ -22,7 +22,7 @@ class Comment extends Component {
         <div className="area-text-comment">
           <p className="text-comment">
             <span className="name-comment" >  {this.props.comments.author.name} </span>
-            {this.props.comments.content}
+            {this.props.comments.content} 
           </p>
         </div>
       </div>
