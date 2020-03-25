@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'; 
 
 import './style/body.css';
 import Header from './components/Header'
