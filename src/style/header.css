@@ -1,0 +1,31 @@
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #3c5b9a;
+    height: 55px;
+}
+
+.container-header img {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    width: 150px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.meuPerfil {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 15px;
+    margin-left: 10px;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 650;
+    cursor: pointer;
+}
+
+i {
+    margin-left: 8px;
+}
