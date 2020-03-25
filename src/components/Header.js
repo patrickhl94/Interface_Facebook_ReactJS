@@ -6,13 +6,13 @@ class Header extends Component {
 
   render(){
     return(
-     <div class="container-header">
+     <div className="container-header">
        
-       <img src={faceLogo} alt="Logo Facebook"/>
+       <img className="logo-img" src={faceLogo} alt="Logo Facebook"/>
       
       <div className="meuPerfil">
         Meu Perfil
-        <i class="fas fa-user-circle"></i> 
+        <i className="fas fa-user-circle"></i> 
       </div>
 
      </div>
