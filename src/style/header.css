@@ -5,13 +5,14 @@
     height: 55px;
 }
 
-.container-header img {
+.logo-img {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 10px;
     width: 150px;
     height: 35px;
     cursor: pointer;
+    border-radius: 0;
 }
 
 .meuPerfil {
